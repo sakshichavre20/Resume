@@ -6,7 +6,17 @@ import { FaGraduationCap, FaPencilRuler } from "react-icons/fa";
 import { RiUserStarFill } from "react-icons/ri";
 import { MdEmojiSymbols } from "react-icons/md";
 import { IoMdContacts } from "react-icons/io";
-function NavBar() {
+import { AiOutlineMenu } from "react-icons/ai";
+function NavBar({
+  color,
+  eduClick,
+  skillClick,
+  exClick,
+  proClick,
+  achClick,
+  hobClick,
+  conClick,
+}) {
   const [navHover, setNavHover] = useState("");
   const { width, height } = useWindowDimensions();
 
@@ -27,6 +37,7 @@ function NavBar() {
         >
           <a
             className="navbar_option"
+            onClick={eduClick}
             onMouseEnter={() => setNavHover("Education")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -41,6 +52,7 @@ function NavBar() {
           </a>
           <a
             className="navbar_option"
+            onClick={skillClick}
             onMouseEnter={() => setNavHover("Skills")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -55,6 +67,7 @@ function NavBar() {
           </a>
           <a
             className="navbar_option"
+            onClick={proClick}
             onMouseEnter={() => setNavHover("Projects")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -69,6 +82,7 @@ function NavBar() {
           </a>
           <a
             className="navbar_option"
+            onClick={exClick}
             onMouseEnter={() => setNavHover("Experience")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -83,6 +97,7 @@ function NavBar() {
           </a>
           <a
             className="navbar_option"
+            onClick={achClick}
             onMouseEnter={() => setNavHover("Achivements")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -97,6 +112,7 @@ function NavBar() {
           </a>
           <a
             className="navbar_option"
+            onClick={hobClick}
             onMouseEnter={() => setNavHover("Hobbies")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -111,6 +127,7 @@ function NavBar() {
           </a>
           <a
             className="navbar_option"
+            onClick={conClick}
             onMouseEnter={() => setNavHover("Get in Touch")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -142,6 +159,7 @@ function NavBar() {
             color={"grey"}
             size={24}
             className="icon_options"
+            onClick={eduClick}
             onMouseEnter={() => setNavHover("Education")}
             onMouseOut={() => setNavHover("")}
             style={{
@@ -156,6 +174,7 @@ function NavBar() {
           <GiSkills
             color={"grey"}
             size={24}
+            onClick={skillClick}
             className="icon_options"
             onMouseEnter={() => setNavHover("Skills")}
             onMouseOut={() => setNavHover("")}
@@ -169,6 +188,7 @@ function NavBar() {
           />
           <FaPencilRuler
             color={"grey"}
+            onClick={proClick}
             size={22}
             className="icon_options"
             onMouseEnter={() => setNavHover("Projects")}
@@ -183,6 +203,7 @@ function NavBar() {
           />
           <RiUserStarFill
             color={"grey"}
+            onClick={exClick}
             size={24}
             className="icon_options"
             onMouseEnter={() => setNavHover("Experience")}
@@ -198,6 +219,7 @@ function NavBar() {
           <GiDiamondTrophy
             color={"grey"}
             size={24}
+            onClick={achClick}
             className="icon_options"
             onMouseEnter={() => setNavHover("Achivements")}
             onMouseOut={() => setNavHover("")}
@@ -211,6 +233,7 @@ function NavBar() {
           />
           <MdEmojiSymbols
             color={"grey"}
+            onClick={hobClick}
             size={24}
             className="icon_options"
             onMouseEnter={() => setNavHover("Hobbies")}
@@ -225,6 +248,7 @@ function NavBar() {
           />
           <IoMdContacts
             color={"grey"}
+            onClick={conClick}
             size={28}
             className="icon_options"
             onMouseEnter={() => setNavHover("Get in Touch")}

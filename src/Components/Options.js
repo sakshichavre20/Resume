@@ -321,13 +321,53 @@ function Hobbies() {
         style={{
           backgroundColor: "rgba(0,0,0,0.2)",
           display: "flex",
-          height: 100,
+          // height: 100,
           width: width - 70,
           borderRadius: 10,
           flexDirection: "column",
           padding: 10,
         }}
-      ></div>
+      >
+        <div
+          style={{
+            flexDirection: "row",
+            display: "flex",
+            marginTop: 5,
+            overflowX: "auto",
+          }}
+        >
+          <ImageTitle
+            src={
+              "https://miro.medium.com/max/1400/1*S81O15rjKfG-BFdnNC6-GQ.jpeg"
+            }
+            title={"Reading"}
+          />
+          <ImageTitle
+            src={
+              "https://newheightsschool.co.uk/wp-content/uploads/2020/10/Art.jpg"
+            }
+            title={"Art"}
+          />
+          <ImageTitle
+            src={
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Basketball_Clipart.svg/1200px-Basketball_Clipart.svg.png"
+            }
+            title={"Basket Ball"}
+          />
+          <ImageTitle
+            src={
+              "https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874__340.jpg"
+            }
+            title={"Treking"}
+          />
+          <ImageTitle
+            src={
+              "https://static.toiimg.com/thumb/msid-83229866,width-1200,height-900,resizemode-4/.jpg"
+            }
+            title={"Bad minton"}
+          />
+        </div>
+      </div>
     </div>
   );
 }

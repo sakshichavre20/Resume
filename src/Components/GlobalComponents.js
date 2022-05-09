@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./GlobalStyles.css";
 import { GoPrimitiveDot } from "react-icons/go";
 const ImageTitle = ({ src, title, href }) => {
-  const [hover, setHover] = useState(false);
   return (
     <div
       style={{

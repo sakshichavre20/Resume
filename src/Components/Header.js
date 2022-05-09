@@ -14,7 +14,7 @@ function Header() {
         width: "100vw",
       }}
     >
-      {width > 845 && <NavBar />}
+      {/* {width > 845 && <NavBar />}
       {width < 845 && (
         <div
           style={{
@@ -31,11 +31,16 @@ function Header() {
         >
           <AiOutlineMenu size={23} color={"grey"} />
         </div>
-      )}
+      )} */}
       <div style={{ display: "flex", paddingLeft: 20, alignItems: "center" }}>
         <img
-          src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
-          style={{ height: 200, width: 200, borderRadius: 200 }}
+          // src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+          src={require("../../src/assets/profile.jpeg")}
+          style={{
+            height: 200,
+            width: 200,
+            borderRadius: 200,
+          }}
         />
         <div
           style={{ marginLeft: 20, flexDirection: "column", display: "flex" }}
