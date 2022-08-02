@@ -364,7 +364,7 @@ function Hobbies() {
             src={
               "https://static.toiimg.com/thumb/msid-83229866,width-1200,height-900,resizemode-4/.jpg"
             }
-            title={"Bad minton"}
+            title={"Badminton"}
           />
         </div>
       </div>

@@ -33,6 +33,7 @@ function NavBar({
             borderRadius: 10,
             backgroundColor: "#37254977",
             boxShadow: "0px -3px 5px #fff4,0px 5px 10px #000",
+            zIndex: 20,
           }}
         >
           <a
